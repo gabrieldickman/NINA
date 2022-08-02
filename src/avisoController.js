@@ -39,6 +39,9 @@ module.exports = {
         const aviso = await prisma.aviso.update({
             where: {
                 id: parseInt(req.params.id)
+            },
+            data: {
+                content : req.body.content
             }
         })
 
