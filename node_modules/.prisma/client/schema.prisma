@@ -15,7 +15,7 @@ model Aviso {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   content   String?
-  date  DateTime 
+  day  DateTime 
 }
 
 
