@@ -9,4 +9,5 @@ routes.delete('/avisos/:id', avisoController.deletarAviso);
 routes.put('/avisos/:id', avisoController.editarAviso);
 routes.post('/avisos', avisoController.criarAviso);
 
+
 module.exports = routes;
