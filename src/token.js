@@ -1,5 +1,7 @@
+require('dotenv').config();
+
 let request = require("request");
-let token = '218:a5a6281c41550a5b567b94fde305fafa7e7a0cb8a6aed39ddec9ea9284e190ca';
+let token = process.env.TOKEN_BD;
 let options = { method: 'GET',
   url: 'https://ixc.brasildigital.net.br/webservice/v1/su_oss_chamado',
   headers:

@@ -1,10 +1,14 @@
 const express = require('express');
-const { PrismaClient } = require('@prisma/client');
-const { json } = require('express');
-const routes = require('./routes');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+const routes = require('./routes/routes');
+const { PrismaClient } = require('@prisma/client')
 
 const app = express();
-const prisma = new PrismaClient();
+const prisma = new PrismaClient()
+
+app.use(cors());
+app.use(bodyParser.json());
 
 app.use(express.json());
 app.use(routes);

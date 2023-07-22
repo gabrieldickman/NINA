@@ -1,6 +1,6 @@
 const express = require('express');
 
-const avisoController = require('./avisoController');
+const avisoController = require('../controllers/avisoController');
 
 const routes = express.Router();
 
