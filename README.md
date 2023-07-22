@@ -1,2 +1,2 @@
-# nina-back
-Service Order Manager
+# NINA
+Gerenciador de Ordens de Serviço
