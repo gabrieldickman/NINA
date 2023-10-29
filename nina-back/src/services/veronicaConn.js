@@ -12,7 +12,6 @@ module.exports = {
 
   connection: {
     sql: mysql.createPool({
-      connectionLimit: 10,
       host: veroHost,
       port: veroPort,
       user: veroUser,
