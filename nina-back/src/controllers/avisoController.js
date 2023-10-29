@@ -15,8 +15,9 @@ module.exports = {
 
         const aviso = await prisma.aviso.create({
             data: {
+                title: req.body.title,
                 content: req.body.content,
-                day: req.body.day
+                day: new Date(req.body.day)
             }
         })
 
@@ -41,6 +42,7 @@ module.exports = {
                 id: parseInt(req.params.id)
             },
             data: {
+                title : req.body.title,
                 content : req.body.content
             }
         })

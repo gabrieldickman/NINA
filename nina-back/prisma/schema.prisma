@@ -11,11 +11,20 @@ datasource db {
 }
 
 model Aviso {
-  id        Int      @id @default(autoincrement())
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  content   String?
-  day  DateTime 
+  id           Int      @id @default(autoincrement())
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  title        String
+  content      String
+  day          DateTime 
+}
+
+model Note {
+  id           Int @id @default(autoincrement())
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  title        String
+  content      String
 }
 
 
