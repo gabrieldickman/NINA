@@ -14,5 +14,8 @@ routes.get('/chamados/reincidencia', veronicaController.getChamadosReincidencia)
 routes.get('/chamados/tecnico/:id', veronicaController.getChamadosPorTecnico);
 routes.get('/chamados/cidade/:id', veronicaController.getChamadosPorCidade);
 routes.get('/chamados/data/:id', veronicaController.getChamadosPorData);
+routes.get('/chamados/assunto/:id', veronicaController.getChamadosPorAssunto);
+routes.get('/chamados/reagendar/:id', veronicaController.getChamadosParaReagendar);
+
 
 module.exports = routes;
