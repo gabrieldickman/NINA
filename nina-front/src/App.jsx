@@ -1,10 +1,13 @@
 import React from "react";
-import Header from "./components/header";
+import Header from "./components/Header.jsx";
+import Aside from "./components/Aside.jsx";
+
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <Header />
+      <Aside />
     </div>
   );
 }

@@ -1,12 +1,66 @@
-import React from "react"
-import styles from "../modules/header.module.css"
+import React from "react"; 
+import logobd from "../assests/logo-brasil-digital.png"
+import { FaUser } from "react-icons/fa";
+import { IoLogOutSharp } from "react-icons/io5";
+import styles from "../modules/Header.module.css"
 
-function Header(){
+function Header() {
   return(
-    <div className={styles.header}>
-      asdasf
+    <div className={styles.container}>
+     
+      <div className={styles.logo}>
+        <img src={logobd} alt="Logo Brasil Digital Branca" />
+        <div className={styles.info_user_logado}>
+          <button><FaUser /></button>
+          <p>GABRIEL DICKMAN</p>
+          <button><IoLogOutSharp  size={17}/></button>
+        </div>
+      </div>  
+
+      <header className={styles.header}>  
+
+        <div className={styles.informacoes_da_filtragem}>
+
+          <div className={styles.title}>
+            <p>INFORMAÇÕES DA FILTRAGEM</p>
+          </div>
+
+          <hr />
+
+          <div className={styles.filtros_selecionados}>
+
+            <div className={styles.filtros_row}>
+              <div className={styles.filtro_departamento}>
+                <p>DEPARTAMENTO:</p>
+              </div>
+              <div className={styles.filtro_cidade}>
+                <p>CIDADE: </p>
+              </div>
+              <div className={styles.filtro_data}>
+                <p>DATA:  </p>
+              </div>
+            </div>
+
+            <div className={styles.filtros_row}>
+              <div className={styles.filtro_tecnico}>
+                <p>TÉCNICO: </p>
+              </div>
+              <div className={styles.filtro_periodo}>
+                <p>PERÍODO: </p>
+              </div>
+              <div className={styles.filtro_resticao}>
+                <p>RESTRIÇÃO: </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>  
+          
+      </header>
+
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

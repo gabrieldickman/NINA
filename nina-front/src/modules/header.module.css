@@ -1,6 +1,85 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.logo{
+  background-color: #028b42;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.info_user_logado{
+  color: white;
+  margin-right: 0.4rem;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info_user_logado button{
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.logo img{
+  width: 200px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
 .header{
   background-color: #225474;
+  color: #FFFFFF;
+  height: 100%;
   width: 100%;
-  height: 100px;
-  margin: 0 0 0 150px;
+  letter-spacing: 0.1rem;
+
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+hr{
+  border: 1px solid;
+} 
+
+.filtros_selecionados{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  margin: 1rem 1rem;
+}
+
+.filtros_row{
+  display: flex;
+  flex-direction: row;
+  gap: 10em;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0.5rem;
+}
+
+.filtro_departamento,
+.filtro_cidade,
+.filtro_data,
+.filtro_tecnico,
+.filtro_periodo,
+.filtro_restricao{
+  width: 25rem;
 }
