@@ -1,6 +1,12 @@
 import React from "react";
 import styles from "../modules/Aside.module.css";
 
+import ButtonDepartamento from "./aside_buttons/ButtonDepartamento";
+import ButtonTecnico from "./aside_buttons/ButtonTecnico";
+import ButtonCidade from "./aside_buttons/ButtonCidade";
+import ButtonPeriodo from "./aside_buttons/ButtonPeriodo";
+import ButtonData from "./aside_buttons/ButtonData";
+
 
 function Aside(){
 
@@ -17,30 +23,24 @@ function Aside(){
 
         <div className={styles.coluna_de_filtros}>
 
-          <div className={styles.departamento}>
-            <button>DEPARTAMENTO</button>
-          </div>
+            <div className={styles.filtros}>
 
-          <div className={styles.tecnico}>
-            <button>TÉCNICO</button>
-          </div>
+            <ButtonDepartamento />
 
-          <div className={styles.cidade}>
-            <button>CIDADE</button>
-          </div>
+            <ButtonTecnico />
 
-          <div className={styles.periodo}>
-            <button>PERIODO</button>
-          </div>
+            <ButtonCidade />
 
-          <div className={styles.data}>
-            <button>DATA</button>
-          </div>
+            <ButtonPeriodo />
 
-          <div className={styles.aviso}>
-            <button>AVISOS</button>
-          </div>
+            <ButtonData />
 
+            <div className={styles.aviso}>
+              <button>AVISOS</button>
+            </div>
+
+          </div>
+         
         </div>
 
       </div>
