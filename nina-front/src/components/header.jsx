@@ -11,9 +11,11 @@ function Header() {
       <div className={styles.logo}>
         <img src={logobd} alt="Logo Brasil Digital Branca" />
         <div className={styles.info_user_logado}>
-          <button><FaUser /></button>
+          <div className={styles.username}>
+          <FaUser />
           <p>GABRIEL DICKMAN</p>
-          <button><IoLogOutSharp  size={17}/></button>
+          </div>
+          <button><IoLogOutSharp  size={18}/></button>
         </div>
       </div>  
 

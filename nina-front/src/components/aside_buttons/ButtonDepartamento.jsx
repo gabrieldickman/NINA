@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../../modules/Aside.module.css";
 import { useState } from "react";
+import { FaGear } from "react-icons/fa6";
+
 
 function ButtonDepartamento(){
 
@@ -12,6 +14,7 @@ function ButtonDepartamento(){
 
   return(
     <div className={styles.departamento}>
+      <FaGear size={23}/>
       <button onClick={openOptions}>DEPARTAMENTO</button>
         {open ? (
           <ul className={styles.departamento_options_list}>

@@ -2,6 +2,61 @@
 .container{
   background-color: #225474;
   width: 13.3rem;
-  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 
 }
+
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.title, hr{
+  color: #FFF;
+  margin: 1rem;
+}
+
+.title hr {
+  width: 12rem;
+}
+
+.coluna_de_filtros{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+
+}
+
+.filtros{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.filtros button{
+  width: 10rem;
+  background-color: transparent;
+  border: none;
+  font-size: 0.9rem;
+  color: #FFF;
+
+}
+
+.departamento_options_list,
+.tecnico_options_list,
+.cidade_options_list,
+.periodo_options_list,
+.data_options_list{
+  list-style: none;
+}
+
+
+
+
+

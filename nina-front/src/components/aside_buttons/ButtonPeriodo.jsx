@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../../modules/Aside.module.css";
 import { useState } from "react";
+import { FaClock } from "react-icons/fa";
+
 
 function ButtonPeriodo(){
 
@@ -12,6 +14,7 @@ function ButtonPeriodo(){
 
   return(
     <div className={styles.periodo}>
+      <FaClock size={20}/>
       <button onClick={openOptions}>PERIODO</button>
         {open ? (
           <ul className={styles.periodo_options_list}>

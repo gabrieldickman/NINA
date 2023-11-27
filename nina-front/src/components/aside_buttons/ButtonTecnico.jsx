@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../../modules/Aside.module.css";
 import { useState } from "react";
+import { MdEngineering } from "react-icons/md";
+
 
 function ButtonTecnico() {
   const [open, setOpen] = useState(false);
@@ -11,6 +13,7 @@ function ButtonTecnico() {
 
   return (
     <div className={styles.tecnico}>
+      <MdEngineering size={30}/>
       <button onClick={openOptions}>TÉCNICO</button>
       {open ? (
         <ul className={styles.tecnico_options_list}>
