@@ -2,7 +2,7 @@ import React from "react";
 import logobd from "../assests/logo-brasil-digital.png"
 import { FaUser } from "react-icons/fa";
 import { IoLogOutSharp } from "react-icons/io5";
-import styles from "../modules/Header.module.css"
+import styles from "../modules/header.module.css"
 
 function Header() {
   return(
@@ -31,30 +31,26 @@ function Header() {
 
           <div className={styles.filtros_selecionados}>
 
-            <div className={styles.filtros_row}>
-              <div className={styles.filtro_departamento}>
-                <p>DEPARTAMENTO:</p>
+              <div className={styles.item_filtro}>
+                <p>DEPARTAMENTO: </p>
               </div>
-              <div className={styles.filtro_cidade}>
+              <div className={styles.item_filtro}>
                 <p>CIDADE: </p>
               </div>
-              <div className={styles.filtro_data}>
-                <p>DATA:  </p>
+              <div className={styles.item_filtro}>
+                <p>DATA: </p>
               </div>
-            </div>
-
-            <div className={styles.filtros_row}>
-              <div className={styles.filtro_tecnico}>
+            
+              <div className={styles.item_filtro}>
                 <p>TÉCNICO: </p>
               </div>
-              <div className={styles.filtro_periodo}>
+              <div className={styles.item_filtro}>
                 <p>PERÍODO: </p>
               </div>
-              <div className={styles.filtro_resticao}>
+              <div className={styles.item_filtro}>
                 <p>RESTRIÇÃO: </p>
               </div>
-            </div>
-
+    
           </div>
 
         </div>  

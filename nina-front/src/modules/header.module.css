@@ -1,12 +1,10 @@
 .container{
     display: flex;
     flex-direction: row;
-    
 }
 
 .logo{
   background-color: #028b42;
-  width: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,8 +45,7 @@
 .header{
   background-color: #225474;
   color: #FFFFFF;
-  height: 100%;
-  width: 100%;
+  width: 100vw;
 
 }
 
@@ -62,30 +59,16 @@
 
 hr{
   border: 1px solid;
-} 
+}
 
 .filtros_selecionados{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: flex-start;
-  margin: 1rem 1rem;
-}
-
-.filtros_row{
-  display: flex;
-  flex-direction: row;
-  gap: 10em;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
   justify-content: center;
-  margin: auto 0.5rem;
+  
 }
 
-.filtro_departamento,
-.filtro_cidade,
-.filtro_data,
-.filtro_tecnico,
-.filtro_periodo,
-.filtro_restricao{
-  width: 25rem;
-}
+
+
+
+
