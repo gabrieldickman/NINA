@@ -1,0 +1,34 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.options{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  overflow-y: scroll;
+  max-height: 10rem;
+  width: 10rem;
+}
+
+.options::-webkit-scrollbar-track{
+	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+	border-radius:0;
+	background-color: #D0D4CE;
+}
+
+.options::-webkit-scrollbar{
+	width: 6px;
+	background-color: #D0D4CE;
+}
+
+.options::-webkit-scrollbar-thumb{
+	border-radius:0;
+	-webkit-box-shadow: inset 0 0 1px rgba(0,0,0,.3);
+	background-color: #224167;
+}

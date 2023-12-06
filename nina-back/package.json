@@ -29,6 +29,7 @@
     "mysql2-promise": "^0.1.4",
     "node": "^20.5.0",
     "nodemon": "^3.0.1",
+    "remove-accents": "^0.5.0",
     "request": "^2.88.2"
   },
   "devDependencies": {

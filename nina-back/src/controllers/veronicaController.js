@@ -14,7 +14,7 @@ module.exports = {
         veronicaConn.connection.sql.releaseConnection()
 
         return res.json(allChamadosConexao);
-    },
+    }, 
 
     async getChamadosReincidencia(req, res){
 
@@ -99,7 +99,6 @@ module.exports = {
 
         return res.json(chamadosPorAssunto);
     },
-
     async getChamadosParaReagendar(req, res){
 
         const status = req.params.id;
@@ -114,6 +113,23 @@ module.exports = {
         veronicaConn.connection.sql.releaseConnection()
 
         return res.json(chamadosParaReagendar)
+    },
+    async getChamadosPorPeriodo(req, res){
+
+        const periodo = req.params.id;
+
+
+        const [ChamadosPorPeriodo] = await veronicaConn.connection.sql.execute(`
+        SELECT * FROM veronica.su_oss_chamados_all 
+        WHERE departamento="Departamento Suporte Técnico"  
+        AND melhor_horario_agenda=${periodo}
+        AND status="AG"
+        ORDER BY data_agenda DESC;
+        `);
+
+        veronicaConn.connection.sql.releaseConnection()
+
+        return res.json(ChamadosPorPeriodo)
     }
 
 }
