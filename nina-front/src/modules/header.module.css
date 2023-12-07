@@ -6,7 +6,6 @@
   width: calc(100vw - 1rem);
 }
 
-
 .logo {
   background-color: #028b42;
   display: flex;
@@ -51,16 +50,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem auto;
+  margin: 1rem 0 0 3rem;
 }
 
 .title hr {
   border: 1px solid;
-  width: 50rem;
+  width: 60rem;
 }
 
 .filtros_selecionados {
   display: grid;
   grid-template-columns: repeat(3, 350px);
   justify-content: center;
+}
+
+.item_filtro{
+  margin-left: 3rem;
+}
+
+.title_mural{
+  margin: 3rem 0 0 31rem;
 }

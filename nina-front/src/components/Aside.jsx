@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "../modules/Aside.module.css";
 import Button from "./forms/Button";
 import { GiBigGear } from "react-icons/gi";
@@ -6,15 +6,8 @@ import { MdEngineering } from "react-icons/md";
 import { MdLocationCity } from "react-icons/md";
 import { FaRegClock } from "react-icons/fa";
 import { RiMegaphoneFill } from "react-icons/ri";
-import Calendar from "react-calendar";
 
-function Aside() {
-
-  const [mostrarCalendario, setMostrarCalendario] = useState(false);
-
-  const handleAvisosClick = () => {
-    setMostrarCalendario(!mostrarCalendario);
-  };
+function Aside({ onAvisosClick }) {
 
   return (
     <div className={styles.wrapper}>
@@ -76,7 +69,7 @@ function Aside() {
           </div>
           <div className={styles.button}>
             <RiMegaphoneFill color="black" />
-            <button onClick={handleAvisosClick}>AVISOS</button>
+            <button onClick={onAvisosClick}>AVISOS</button>
           </div>
         </div>
       </div>

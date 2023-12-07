@@ -51,7 +51,7 @@ hr{
 .filtros {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .button{ 
@@ -65,5 +65,6 @@ hr{
   border: none;
   font-size: 0.9rem;
   color: #fff;
+  cursor: pointer;
 
 }
