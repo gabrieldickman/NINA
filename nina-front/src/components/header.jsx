@@ -50,23 +50,23 @@ function Header({ showCalendar }) {
 
               <div className={styles.filtros_selecionados}>
                 <div className={styles.item_filtro}>
-                  <p>DEPARTAMENTO:</p>
+                  <p>DEPARTAMENTO: *</p>
                 </div>
                 <div className={styles.item_filtro}>
-                  <p>CIDADE: </p>
+                  <p>CIDADE: *</p>
                 </div>
                 <div className={styles.item_filtro}>
-                  <p>DATA: </p>
+                  <p>DATA: *</p>
                 </div>
 
                 <div className={styles.item_filtro}>
-                  <p>TÉCNICO: </p>
+                  <p>TÉCNICO: *</p>
                 </div>
                 <div className={styles.item_filtro}>
-                  <p>PERÍODO: </p>
+                  <p>PERÍODO: *</p>
                 </div>
                 <div className={styles.item_filtro}>
-                  <p>RESTRIÇÃO: </p>
+                  <p>RESTRIÇÃO: *</p>
                 </div>
               </div>
             </div>

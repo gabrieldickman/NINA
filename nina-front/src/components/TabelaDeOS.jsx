@@ -1,8 +1,15 @@
 import React from "react";
 import styles from "../modules/Tabela.module.css";
 
-function TabelaDeOS({ apiData, selectedOption }) {
+function formatarData(data) {
+  const dataObj = new Date(data);
+  const dia = String(dataObj.getDate()).padStart(2, "0");
+  const mes = String(dataObj.getMonth() + 1).padStart(2, "0");
+  const ano = dataObj.getFullYear();
+  return `${dia}/${mes}/${ano}`;
+}
 
+function TabelaDeOS({ apiData, selectedOption }) {
   if (!apiData || apiData.length === 0) {
     return (
       <div className={styles.loader}>
@@ -17,7 +24,7 @@ function TabelaDeOS({ apiData, selectedOption }) {
       <td>{item.id_os}</td>
       <td>{item.status}</td>
       <td>{item.client_id}</td>
-      <td>{item.data_agenda}</td>
+      <td>{formatarData(item.data_agenda)}</td>
       <td>{item.tecnico}</td>
       <td>{item.setor}</td>
       <td>{item.melhor_horario_agenda}</td>
