@@ -53,7 +53,6 @@
   border: 1px solid #ddd;
   cursor: pointer;
   box-sizing: border-box;
-
 }
 
 .day:hover {
@@ -66,12 +65,96 @@
 
 }
 
-.addIcon {
-  display: none; /* Inicialmente, o ícone está oculto */
+.modal {
+  position: absolute;
+  top: 20rem;
+  left: 35rem;
+  transform: translate(-50%, -50%);
+  z-index: 2; 
+  width: 30rem;
+  height: 30rem;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+
+}
+
+.modal_infos{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin: 0 3rem;
+}
+
+.modal_title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.modalButtons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  
+}
+
+.modalButtons button{
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background: #225474;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.modal input {
+  border: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.modal textarea{
+  border: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  height: 4rem;
+  
+}
+
+.reminder{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  background-color: #225474;
+  color: #fff;
+}
+.reminder button{
+  border: 0.5px solid black;
+  color: #000000;
   cursor: pointer;
 }
 
-.day:hover .addIcon {
-  display: block; /* Exibir o ícone quando o dia está sendo hover */
+.reminder_buttons{
+  display: flex;
+  flex-direction: column;
+
+
 }
+
+
+
+
+
 

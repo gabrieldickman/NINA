@@ -7,7 +7,7 @@ import { MdLocationCity } from "react-icons/md";
 import { FaRegClock } from "react-icons/fa";
 import { RiMegaphoneFill } from "react-icons/ri";
 
-function Aside({ onAvisosClick }) {
+function Aside({ onAvisosClick, onApiData }) {
 
   return (
     <div className={styles.wrapper}>
@@ -26,6 +26,7 @@ function Aside({ onAvisosClick }) {
               endpoint="chamados"
               options={["conexao", "reincidencia"]}
               wrapInQuotes={false}
+              onApiData={onApiData}
             />
           </div>
           <div className={styles.button}>
@@ -47,6 +48,7 @@ function Aside({ onAvisosClick }) {
                 "Reinaldo Vieira",
               ]}
               wrapInQuotes={true}
+              onApiData={onApiData}
             />
           </div>
           <div className={styles.button}>
@@ -56,6 +58,7 @@ function Aside({ onAvisosClick }) {
               endpoint="chamados/cidade"
               options={["Porto Velho", "Candeias"]}
               wrapInQuotes={true}
+              onApiData={onApiData}
             />
           </div>
           <div className={styles.button}>
@@ -65,6 +68,7 @@ function Aside({ onAvisosClick }) {
               endpoint="chamados/periodo"
               options={["Manhã", "Tarde"]}
               wrapInQuotes={true}
+              onApiData={onApiData}
             />
           </div>
           <div className={styles.button}>
