@@ -27,4 +27,3 @@ Necessário ter o projeto clonado na máquina local. <br>
 **Database**
 - MySQL Server
 
-**O projeto finalizado esta na branch master**
